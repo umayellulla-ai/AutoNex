@@ -1,0 +1,17 @@
+# AUTONEX - Python dependencies
+# Install with:  pip install -r requirements.txt
+
+# --- Web backend ---
+Flask>=3.0,<4.0            # web framework (routes, sessions, templates)
+Werkzeug>=3.0,<4.0         # password hashing (generate_password_hash / check_password_hash)
+python-dotenv>=1.0         # reads DB_HOST / DB_USER / ... from the .env file
+
+# --- Database ---
+mysql-connector-python>=8.4   # official MySQL driver (works with MySQL 8 default login, no extra packages)
+
+# --- Machine Learning ---
+numpy>=1.26
+pandas>=2.2
+scikit-learn>=1.4
+joblib>=1.3                # saves / loads the trained models (.pkl)
+gunicorn>=22.0,<24.0
